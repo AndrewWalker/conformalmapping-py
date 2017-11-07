@@ -22,7 +22,7 @@ def plotbox(points, scale = 1.2):
 
     dx = (box[1] - box[0])
     dy = (box[3] - box[2])
-    dbox = (scale/2.0) * np.max([dx, dx])
+    dbox = (scale/2.0) * np.max([dx, dy])
     dbox = dbox * np.array([-1.0, 1.0])
 
     midx = np.mean([box[0], box[1]])
